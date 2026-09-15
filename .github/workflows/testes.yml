@@ -22,5 +22,5 @@ jobs:
           python -m pip install -r requeriments.txt
 
       - name: Executar testes com cobertura
-  run: |
-    pytest -v --cov=app --cov-report=term-missing
+        run: |
+          python -m pytest -v --cov=app --cov-report=term-missing
