@@ -21,6 +21,6 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requeriments.txt
 
-      - name: Executar testes
-        run: |
-          pytest -v
+      - name: Executar testes com cobertura
+  run: |
+    pytest -v --cov=app --cov-report=term-missing
